@@ -1,0 +1,35 @@
+{
+  "images" : [
+    {
+      "filename" : "80-806065_free-vector-graphic-clock-clipart-transparent-background (1).png",
+      "idiom" : "universal",
+      "resizing" : {
+        "cap-insets" : {
+          "bottom" : 8,
+          "left" : 12,
+          "right" : 10,
+          "top" : 7
+        },
+        "center" : {
+          "height" : 225,
+          "mode" : "tile",
+          "width" : 223
+        },
+        "mode" : "9-part"
+      },
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

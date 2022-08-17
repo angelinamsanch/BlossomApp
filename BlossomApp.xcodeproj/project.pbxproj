@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52EAE04C28AC94A5003959E0 /* ToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EAE04B28AC94A5003959E0 /* ToDoTableViewController.swift */; };
+		52EAE04E28AC95A3003959E0 /* GoalsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EAE04D28AC95A3003959E0 /* GoalsTableViewController.swift */; };
+		52EAE05028AC95F6003959E0 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EAE04F28AC95F6003959E0 /* TimerViewController.swift */; };
 		571D53C828AC17DA00364087 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571D53C728AC17DA00364087 /* AppDelegate.swift */; };
 		571D53CA28AC17DA00364087 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571D53C928AC17DA00364087 /* SceneDelegate.swift */; };
 		571D53CC28AC17DA00364087 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571D53CB28AC17DA00364087 /* ViewController.swift */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		52EAE04B28AC94A5003959E0 /* ToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewController.swift; sourceTree = "<group>"; };
+		52EAE04D28AC95A3003959E0 /* GoalsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsTableViewController.swift; sourceTree = "<group>"; };
+		52EAE04F28AC95F6003959E0 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		571D53C428AC17DA00364087 /* BlossomApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlossomApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		571D53C728AC17DA00364087 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		571D53C928AC17DA00364087 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +67,9 @@
 				571D53C728AC17DA00364087 /* AppDelegate.swift */,
 				571D53C928AC17DA00364087 /* SceneDelegate.swift */,
 				571D53CB28AC17DA00364087 /* ViewController.swift */,
+				52EAE04B28AC94A5003959E0 /* ToDoTableViewController.swift */,
+				52EAE04D28AC95A3003959E0 /* GoalsTableViewController.swift */,
+				52EAE04F28AC95F6003959E0 /* TimerViewController.swift */,
 				571D53CD28AC17DA00364087 /* Main.storyboard */,
 				571D53D328AC17DE00364087 /* Assets.xcassets */,
 				571D53D528AC17DE00364087 /* LaunchScreen.storyboard */,
@@ -144,7 +153,10 @@
 				571D53CC28AC17DA00364087 /* ViewController.swift in Sources */,
 				571D53C828AC17DA00364087 /* AppDelegate.swift in Sources */,
 				571D53CA28AC17DA00364087 /* SceneDelegate.swift in Sources */,
+				52EAE05028AC95F6003959E0 /* TimerViewController.swift in Sources */,
 				571D53D228AC17DA00364087 /* BlossomApp.xcdatamodeld in Sources */,
+				52EAE04E28AC95A3003959E0 /* GoalsTableViewController.swift in Sources */,
+				52EAE04C28AC94A5003959E0 /* ToDoTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
