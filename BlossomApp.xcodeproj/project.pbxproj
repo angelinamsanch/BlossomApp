@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		52EAE04C28AC94A5003959E0 /* ToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EAE04B28AC94A5003959E0 /* ToDoTableViewController.swift */; };
+		5222ED4E28AD2F9A00C7BA55 /* ToDoListItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5222ED4C28AD2F9A00C7BA55 /* ToDoListItem+CoreDataClass.swift */; };
+		5222ED4F28AD2F9A00C7BA55 /* ToDoListItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5222ED4D28AD2F9A00C7BA55 /* ToDoListItem+CoreDataProperties.swift */; };
+		5222ED5228AD35C000C7BA55 /* ToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5222ED5128AD35C000C7BA55 /* ToDoViewController.swift */; };
 		52EAE04E28AC95A3003959E0 /* GoalsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EAE04D28AC95A3003959E0 /* GoalsTableViewController.swift */; };
 		52EAE05028AC95F6003959E0 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EAE04F28AC95F6003959E0 /* TimerViewController.swift */; };
 		571D53C828AC17DA00364087 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571D53C728AC17DA00364087 /* AppDelegate.swift */; };
@@ -20,7 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		52EAE04B28AC94A5003959E0 /* ToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewController.swift; sourceTree = "<group>"; };
+		5222ED4C28AD2F9A00C7BA55 /* ToDoListItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToDoListItem+CoreDataClass.swift"; sourceTree = "<group>"; };
+		5222ED4D28AD2F9A00C7BA55 /* ToDoListItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToDoListItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5222ED5128AD35C000C7BA55 /* ToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewController.swift; sourceTree = "<group>"; };
 		52EAE04D28AC95A3003959E0 /* GoalsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsTableViewController.swift; sourceTree = "<group>"; };
 		52EAE04F28AC95F6003959E0 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		571D53C428AC17DA00364087 /* BlossomApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlossomApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +49,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5222ED5028AD2FCE00C7BA55 /* ToDoListItem */ = {
+			isa = PBXGroup;
+			children = (
+				5222ED4C28AD2F9A00C7BA55 /* ToDoListItem+CoreDataClass.swift */,
+				5222ED4D28AD2F9A00C7BA55 /* ToDoListItem+CoreDataProperties.swift */,
+			);
+			path = ToDoListItem;
+			sourceTree = "<group>";
+		};
 		571D53BB28AC17DA00364087 = {
 			isa = PBXGroup;
 			children = (
@@ -64,10 +77,11 @@
 		571D53C628AC17DA00364087 /* BlossomApp */ = {
 			isa = PBXGroup;
 			children = (
+				5222ED5028AD2FCE00C7BA55 /* ToDoListItem */,
 				571D53C728AC17DA00364087 /* AppDelegate.swift */,
 				571D53C928AC17DA00364087 /* SceneDelegate.swift */,
 				571D53CB28AC17DA00364087 /* ViewController.swift */,
-				52EAE04B28AC94A5003959E0 /* ToDoTableViewController.swift */,
+				5222ED5128AD35C000C7BA55 /* ToDoViewController.swift */,
 				52EAE04D28AC95A3003959E0 /* GoalsTableViewController.swift */,
 				52EAE04F28AC95F6003959E0 /* TimerViewController.swift */,
 				571D53CD28AC17DA00364087 /* Main.storyboard */,
@@ -150,13 +164,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5222ED4E28AD2F9A00C7BA55 /* ToDoListItem+CoreDataClass.swift in Sources */,
+				5222ED4F28AD2F9A00C7BA55 /* ToDoListItem+CoreDataProperties.swift in Sources */,
 				571D53CC28AC17DA00364087 /* ViewController.swift in Sources */,
 				571D53C828AC17DA00364087 /* AppDelegate.swift in Sources */,
+				5222ED5228AD35C000C7BA55 /* ToDoViewController.swift in Sources */,
 				571D53CA28AC17DA00364087 /* SceneDelegate.swift in Sources */,
 				52EAE05028AC95F6003959E0 /* TimerViewController.swift in Sources */,
 				571D53D228AC17DA00364087 /* BlossomApp.xcdatamodeld in Sources */,
 				52EAE04E28AC95A3003959E0 /* GoalsTableViewController.swift in Sources */,
-				52EAE04C28AC94A5003959E0 /* ToDoTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
