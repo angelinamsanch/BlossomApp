@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var feelingMsg: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -20,6 +22,24 @@ class ViewController: UIViewController {
         self.message.text = self.allTexts[Int(arc4random_uniform(UInt32(self.allTexts.count)))]
 }
     
+    @IBAction func terribleButton(_ sender: UIButton) {
+        feelingMsg.text = ("It may be difficult but you'll get through this")
+    }
     
+    @IBAction func sadButton(_ sender: UIButton) {
+        feelingMsg.text = ("It will get better, don't worry")
+    }
+    
+    @IBAction func normalButton(_ sender: UIButton) {
+        feelingMsg.text = ("You are doing fine, I believe in you")
+    }
+    
+    @IBAction func happyButton(_ sender: Any) {
+        feelingMsg.text = ("I am glad you are doing well today")
+    }
+    
+    @IBAction func cheerfulButton(_ sender: UIButton) {
+        feelingMsg.text = ("I am proud of you finding your happiness today")
+    }
 }
 
