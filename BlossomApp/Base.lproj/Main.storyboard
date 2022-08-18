@@ -5,7 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,13 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Inspirational Message" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AE4-3T-BeQ">
-                                <rect key="frame" x="208" y="667" width="186" height="195"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="0.0"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKg-Rq-uXI">
                                 <rect key="frame" x="238" y="502" width="169" height="157"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -38,17 +30,17 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6E8-pr-Nsy">
-                                <rect key="frame" x="20" y="64" width="105" height="83"/>
+                                <rect key="frame" x="21" y="64" width="106" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="69"/>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="70"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PiZ-OI-yHJ">
                                 <rect key="frame" x="238" y="337" width="169" height="157"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" red="0.82745098039215681" green="0.76078431372549016" blue="0.82745098039215681" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.82744902369999995" green="0.75931131839999999" blue="0.82745879889999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.82744902369999995" green="0.75931131839999999" blue="0.82745879889999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Goals">
                                     <fontDescription key="titleFontDescription" name="Georgia-Bold" family="Georgia" pointSize="30"/>
@@ -58,18 +50,18 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pXZ-KA-6mt">
-                                <rect key="frame" x="20" y="148" width="387" height="179"/>
+                                <rect key="frame" x="11" y="148" width="396" height="179"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How are you doing today?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dnt-ke-Jkk">
-                                        <rect key="frame" x="0.0" y="8" width="230" height="23"/>
+                                        <rect key="frame" x="8" y="8" width="247" height="23"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I hope you're doing okay" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jss-Yk-a3x">
-                                        <rect key="frame" x="2" y="109" width="374" height="60"/>
+                                        <rect key="frame" x="8" y="109" width="380" height="60"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
                                         <nil key="textColor"/>
@@ -127,19 +119,38 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.80000000000000004" green="0.76470588235294112" blue="0.82745098039215681" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kCl-R8-X8M">
+                                <rect key="frame" x="11" y="691" width="396" height="171"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDV-3L-Uc6">
+                                        <rect key="frame" x="0.0" y="2" width="180" height="161"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Study Timer"/>
+                                        <connections>
+                                            <segue destination="XGx-uO-mk8" kind="show" id="auz-Oo-LXU"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Clock" translatesAutoresizingMaskIntoConstraints="NO" id="98v-hZ-6vl">
+                                        <rect key="frame" x="-84" y="-38" width="351" height="245"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Inspirational Message" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AE4-3T-BeQ">
+                                        <rect key="frame" x="190" y="0.0" width="198" height="169"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="0.0"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.9137254901960784" green="0.88235294117647056" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Flowers 2" translatesAutoresizingMaskIntoConstraints="NO" id="Pwn-1e-K2C">
-                                <rect key="frame" x="-72" y="286" width="363" height="449"/>
+                                <rect key="frame" x="-62" y="280" width="363" height="449"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDV-3L-Uc6">
-                                <rect key="frame" x="20" y="701" width="180" height="161"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Study Timer"/>
-                                <connections>
-                                    <segue destination="XGx-uO-mk8" kind="show" id="auz-Oo-LXU"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.96862745098039216" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -162,7 +173,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="zxL-e4-4Gk"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.94117647058823528" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="mlj-to-qu9">
@@ -176,6 +187,7 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" animates="NO" modalPresentationStyle="overFullScreen" id="I8J-CF-723"/>
                                 </connections>
                             </button>
+                            <color key="tintColor" red="0.86274509799999999" green="0.80784313730000001" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
@@ -192,65 +204,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fG-Vc-cMJ">
-                                <rect key="frame" x="30" y="170" width="354" height="50.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fG-Vc-cMJ">
+                                <rect key="frame" x="30" y="104" width="354" height="50.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="60" translatesAutoresizingMaskIntoConstraints="NO" id="sLW-KX-jZ6">
-                                <rect key="frame" x="-2" y="370.5" width="418" height="31"/>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="60" translatesAutoresizingMaskIntoConstraints="NO" id="sLW-KX-jZ6">
+                                <rect key="frame" x="-2" y="229" width="418" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="slider:" destination="XGx-uO-mk8" eventType="valueChanged" id="H8o-2b-Vpk"/>
                                 </connections>
                             </slider>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8aq-9r-BWY">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8aq-9r-BWY">
                                 <rect key="frame" x="20" y="707" width="375" height="60"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.96853488679999999" green="0.95686906579999997" blue="0.95686262850000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="HTN-rh-SC6"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="20"/>
                                 <state key="normal" title="START">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" red="0.58858942989999996" green="0.47856968640000003" blue="0.63138890270000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <action selector="buttonStart:" destination="XGx-uO-mk8" eventType="touchUpInside" id="nBw-n9-xly"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6yP-YI-dhQ">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6yP-YI-dhQ">
                                 <rect key="frame" x="20" y="765" width="375" height="60"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.58858942989999996" green="0.47856968640000003" blue="0.63138890270000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="ltx-sb-1N3"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="20"/>
                                 <state key="normal" title="STOP">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" red="0.96853488679999999" green="0.95686906579999997" blue="0.95686262850000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <action selector="buttonStop:" destination="XGx-uO-mk8" eventType="touchUpInside" id="5T9-cP-F6O"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Flowers2" translatesAutoresizingMaskIntoConstraints="NO" id="eNV-AY-LYG">
+                                <rect key="frame" x="-137" y="286" width="463" height="430"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="c9z-Gc-fri"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="6yP-YI-dhQ" firstAttribute="leading" secondItem="c9z-Gc-fri" secondAttribute="leading" constant="20" id="2LA-cL-YBr"/>
-                            <constraint firstItem="c9z-Gc-fri" firstAttribute="trailing" secondItem="6yP-YI-dhQ" secondAttribute="trailing" constant="19" id="6Lx-Pw-1Qa"/>
-                            <constraint firstItem="c9z-Gc-fri" firstAttribute="trailing" secondItem="9fG-Vc-cMJ" secondAttribute="trailing" constant="30" id="9eA-LC-MgS"/>
-                            <constraint firstItem="c9z-Gc-fri" firstAttribute="trailing" secondItem="8aq-9r-BWY" secondAttribute="trailing" constant="19" id="HqW-Bm-cRr"/>
-                            <constraint firstItem="sLW-KX-jZ6" firstAttribute="trailing" secondItem="c9z-Gc-fri" secondAttribute="trailing" id="LQg-pS-Kdt"/>
-                            <constraint firstItem="8aq-9r-BWY" firstAttribute="leading" secondItem="c9z-Gc-fri" secondAttribute="leading" constant="20" id="Otb-Qq-fJ9"/>
-                            <constraint firstItem="c9z-Gc-fri" firstAttribute="bottom" secondItem="8aq-9r-BWY" secondAttribute="bottom" constant="75" id="P9z-gW-50O"/>
-                            <constraint firstItem="6yP-YI-dhQ" firstAttribute="top" secondItem="8aq-9r-BWY" secondAttribute="bottom" constant="-2" id="WiS-gq-jt9"/>
-                            <constraint firstItem="8aq-9r-BWY" firstAttribute="top" secondItem="sLW-KX-jZ6" secondAttribute="bottom" constant="272.5" id="YTE-bP-Kg6"/>
-                            <constraint firstItem="c9z-Gc-fri" firstAttribute="bottom" secondItem="6yP-YI-dhQ" secondAttribute="bottom" constant="17" id="aLl-hG-qXc"/>
-                            <constraint firstItem="sLW-KX-jZ6" firstAttribute="leading" secondItem="c9z-Gc-fri" secondAttribute="leading" id="gtW-ss-not"/>
-                            <constraint firstItem="9fG-Vc-cMJ" firstAttribute="leading" secondItem="c9z-Gc-fri" secondAttribute="leading" constant="30" id="h1l-Ug-fD5"/>
-                            <constraint firstItem="sLW-KX-jZ6" firstAttribute="top" secondItem="9fG-Vc-cMJ" secondAttribute="bottom" constant="150" id="kcN-yx-lMC"/>
-                            <constraint firstItem="sLW-KX-jZ6" firstAttribute="top" secondItem="9fG-Vc-cMJ" secondAttribute="bottom" constant="150" id="uPw-fA-9o9"/>
-                            <constraint firstItem="9fG-Vc-cMJ" firstAttribute="top" secondItem="c9z-Gc-fri" secondAttribute="top" constant="170" id="zDo-7p-dhe"/>
-                        </constraints>
+                        <color key="backgroundColor" red="0.82744902369999995" green="0.75931131839999999" blue="0.82745879889999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="PNb-c8-8ou"/>
                     <connections>
@@ -270,7 +272,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="O4B-ro-Y8Y"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.95689338450000005" green="0.94075953960000003" blue="0.96078675989999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="C3v-Jx-UCq">
@@ -339,11 +341,10 @@
         <segue reference="VNx-Wp-IZs"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="Clock" width="2048" height="2048"/>
         <image name="Flowers 2" width="2048" height="2048"/>
+        <image name="Flowers2" width="2048" height="2048"/>
         <image name="Mood_Tracker" width="2048" height="2048"/>
         <image name="arrow.turn.up.left" catalog="system" width="128" height="99"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
