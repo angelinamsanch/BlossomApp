@@ -62,7 +62,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Goals"/>
                                 <connections>
-                                    <segue destination="HVr-YZ-XjZ" kind="show" id="vZS-EL-knf"/>
+                                    <segue destination="O1r-Xg-scF" kind="presentation" modalPresentationStyle="overFullScreen" id="KCB-f8-gpB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4sb-RE-hRv">
@@ -84,34 +84,35 @@
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
         </scene>
-        <!--Goals Table View Controller-->
-        <scene sceneID="JTh-CC-WHE">
+        <!--Goals View Controller-->
+        <scene sceneID="gks-uz-NtC">
             <objects>
-                <tableViewController id="HVr-YZ-XjZ" customClass="GoalsTableViewController" customModule="BlossomApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Njz-XY-DdD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                <viewController id="TC3-7X-jvt" customClass="GoalsViewController" customModule="BlossomApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DHI-uj-bwl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="zxL-e4-4Gk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="xpe-dZ-GAP">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xpe-dZ-GAP" id="4Tn-3k-EJb">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="HVr-YZ-XjZ" id="aka-Os-AgE"/>
-                            <outlet property="delegate" destination="HVr-YZ-XjZ" id="L4c-BA-fLJ"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="hBI-1l-Ro5"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SdK-ZE-epm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="mlj-to-qu9">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="PKh-VX-dhr">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="YvD-ga-fJI">
+                                <rect key="frame" x="20" y="5" width="104.5" height="34.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.turn.up.left" catalog="system" title=" Return"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" animates="NO" modalPresentationStyle="overFullScreen" id="I8J-CF-723"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IVs-Dy-dZv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="858" y="-158"/>
+            <point key="canvasLocation" x="1763.7681159420292" y="-163.39285714285714"/>
         </scene>
         <!--Timer View Controller-->
         <scene sceneID="OPJ-Gk-sbZ">
@@ -143,14 +144,14 @@
                     <navigationItem key="navigationItem" id="C3v-Jx-UCq">
                         <barButtonItem key="leftBarButtonItem" style="plain" id="89z-9g-ZCY">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="q6V-i2-Wol">
-                                <rect key="frame" x="20" y="5" width="92" height="34"/>
+                                <rect key="frame" x="20" y="5" width="104.5" height="34.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <imageReference key="image" image="arrow.left" catalog="system" symbolScale="large"/>
+                                <buttonConfiguration key="configuration" style="plain" title=" Return">
+                                    <imageReference key="image" image="arrow.turn.up.left" catalog="system" symbolScale="large"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="overFullScreen" modalTransitionStyle="flipHorizontal" id="VNx-Wp-IZs"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" animates="NO" modalPresentationStyle="overFullScreen" modalTransitionStyle="flipHorizontal" id="VNx-Wp-IZs"/>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -183,9 +184,30 @@
             </objects>
             <point key="canvasLocation" x="831.88405797101461" y="520.98214285714289"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qDy-Cb-l39">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="O1r-Xg-scF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="tQX-W9-I9g">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="TC3-7X-jvt" kind="relationship" relationship="rootViewController" id="J9O-Q5-LgV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ErJ-Sk-aZB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="853.62318840579712" y="-163.39285714285714"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="I8J-CF-723"/>
+    </inferredMetricsTieBreakers>
     <resources>
-        <image name="arrow.left" catalog="system" width="128" height="98"/>
+        <image name="arrow.turn.up.left" catalog="system" width="128" height="99"/>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
