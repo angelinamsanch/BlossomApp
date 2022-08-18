@@ -20,8 +20,7 @@
 		571D53D228AC17DA00364087 /* BlossomApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 571D53D028AC17DA00364087 /* BlossomApp.xcdatamodeld */; };
 		571D53D428AC17DE00364087 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 571D53D328AC17DE00364087 /* Assets.xcassets */; };
 		571D53D728AC17DE00364087 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 571D53D528AC17DE00364087 /* LaunchScreen.storyboard */; };
-		57BD477E28AE08EB00897E3A /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BD477D28AE08EB00897E3A /* TimerViewModel.swift */; };
-		57BD478028AE094F00897E3A /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BD477F28AE094F00897E3A /* TimerViewController.swift */; };
+		57BD478628AE80F000897E3A /* TImerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BD478528AE80F000897E3A /* TImerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,8 +39,7 @@
 		571D53D328AC17DE00364087 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		571D53D628AC17DE00364087 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		571D53D828AC17DE00364087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		57BD477D28AE08EB00897E3A /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
-		57BD477F28AE094F00897E3A /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		57BD478528AE80F000897E3A /* TImerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TImerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +97,7 @@
 				571D53CB28AC17DA00364087 /* ViewController.swift */,
 				5222ED5128AD35C000C7BA55 /* ToDoViewController.swift */,
 				524E467128ADE33500FC2F0E /* GoalsViewController.swift */,
-				57BD477F28AE094F00897E3A /* TimerViewController.swift */,
-				57BD477D28AE08EB00897E3A /* TimerViewModel.swift */,
+				57BD478528AE80F000897E3A /* TImerViewController.swift */,
 				571D53CD28AC17DA00364087 /* Main.storyboard */,
 				571D53D328AC17DE00364087 /* Assets.xcassets */,
 				571D53D528AC17DE00364087 /* LaunchScreen.storyboard */,
@@ -185,11 +182,10 @@
 				524E467628ADE54000FC2F0E /* GoalListItem+CoreDataProperties.swift in Sources */,
 				5222ED4F28AD2F9A00C7BA55 /* ToDoListItem+CoreDataProperties.swift in Sources */,
 				524E467528ADE54000FC2F0E /* GoalListItem+CoreDataClass.swift in Sources */,
-				57BD478028AE094F00897E3A /* TimerViewController.swift in Sources */,
-				57BD477E28AE08EB00897E3A /* TimerViewModel.swift in Sources */,
 				571D53CC28AC17DA00364087 /* ViewController.swift in Sources */,
 				571D53C828AC17DA00364087 /* AppDelegate.swift in Sources */,
 				5222ED5228AD35C000C7BA55 /* ToDoViewController.swift in Sources */,
+				57BD478628AE80F000897E3A /* TImerViewController.swift in Sources */,
 				571D53CA28AC17DA00364087 /* SceneDelegate.swift in Sources */,
 				571D53D228AC17DA00364087 /* BlossomApp.xcdatamodeld in Sources */,
 				524E467228ADE33500FC2F0E /* GoalsViewController.swift in Sources */,

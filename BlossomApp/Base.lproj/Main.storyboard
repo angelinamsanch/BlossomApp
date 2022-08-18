@@ -114,21 +114,65 @@
             </objects>
             <point key="canvasLocation" x="1763.7681159420292" y="-163.39285714285714"/>
         </scene>
-        <!--View Controller-->
+        <!--Imer View Controller-->
         <scene sceneID="OPJ-Gk-sbZ">
             <objects>
-                <viewController id="XGx-uO-mk8" sceneMemberID="viewController">
+                <viewController id="XGx-uO-mk8" customClass="TImerViewController" customModule="BlossomApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jLg-AR-WiS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="dtD-uc-grn">
+                                <rect key="frame" x="-2" y="406" width="418" height="31"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rz7-Sm-ZHV">
+                                <rect key="frame" x="184" y="200" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PmA-BG-FoF">
+                                <rect key="frame" x="270" y="593" width="92" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="stop"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aX2-hb-xCv">
+                                <rect key="frame" x="53" y="593" width="92" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="start"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="c9z-Gc-fri"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dtD-uc-grn" firstAttribute="top" secondItem="rz7-Sm-ZHV" secondAttribute="bottom" constant="185" id="0mX-Km-pTp"/>
+                            <constraint firstItem="rz7-Sm-ZHV" firstAttribute="leading" secondItem="c9z-Gc-fri" secondAttribute="leading" constant="184" id="7z4-WW-8ew"/>
+                            <constraint firstItem="c9z-Gc-fri" firstAttribute="trailing" secondItem="PmA-BG-FoF" secondAttribute="trailing" constant="52" id="Cp6-85-9Fb"/>
+                            <constraint firstItem="c9z-Gc-fri" firstAttribute="trailing" secondItem="rz7-Sm-ZHV" secondAttribute="trailing" constant="184" id="FRQ-d6-nDP"/>
+                            <constraint firstItem="dtD-uc-grn" firstAttribute="trailing" secondItem="c9z-Gc-fri" secondAttribute="trailing" id="I3V-Ki-Xja"/>
+                            <constraint firstItem="c9z-Gc-fri" firstAttribute="bottom" secondItem="PmA-BG-FoF" secondAttribute="bottom" constant="184" id="IhX-iI-cbP"/>
+                            <constraint firstItem="rz7-Sm-ZHV" firstAttribute="top" secondItem="c9z-Gc-fri" secondAttribute="top" constant="200" id="NcJ-Uw-Dyn"/>
+                            <constraint firstItem="dtD-uc-grn" firstAttribute="leading" secondItem="c9z-Gc-fri" secondAttribute="leading" id="Qqu-PC-sgE"/>
+                            <constraint firstItem="dtD-uc-grn" firstAttribute="leading" secondItem="c9z-Gc-fri" secondAttribute="leading" id="RHj-9P-1D6"/>
+                            <constraint firstItem="aX2-hb-xCv" firstAttribute="top" secondItem="dtD-uc-grn" secondAttribute="bottom" constant="157" id="Y4L-6E-khZ"/>
+                            <constraint firstItem="dtD-uc-grn" firstAttribute="top" secondItem="rz7-Sm-ZHV" secondAttribute="bottom" constant="185" id="fBc-vh-Erv"/>
+                            <constraint firstItem="c9z-Gc-fri" firstAttribute="bottom" secondItem="aX2-hb-xCv" secondAttribute="bottom" constant="184" id="fb6-j5-siR"/>
+                            <constraint firstItem="dtD-uc-grn" firstAttribute="trailing" secondItem="c9z-Gc-fri" secondAttribute="trailing" id="haM-JC-uDH"/>
+                            <constraint firstItem="PmA-BG-FoF" firstAttribute="leading" secondItem="aX2-hb-xCv" secondAttribute="trailing" constant="125" id="ntH-Wn-krF"/>
+                            <constraint firstItem="PmA-BG-FoF" firstAttribute="top" secondItem="dtD-uc-grn" secondAttribute="bottom" constant="157" id="tXa-Sm-ylP"/>
+                            <constraint firstItem="PmA-BG-FoF" firstAttribute="leading" secondItem="c9z-Gc-fri" secondAttribute="leading" constant="270" id="ua9-jR-dbd"/>
+                            <constraint firstItem="aX2-hb-xCv" firstAttribute="leading" secondItem="c9z-Gc-fri" secondAttribute="leading" constant="53" id="z3E-Nm-o0H"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="PNb-c8-8ou"/>
+                    <connections>
+                        <outlet property="lblTime" destination="rz7-Sm-ZHV" id="rpu-6D-GHG"/>
+                        <outlet property="slider" destination="dtD-uc-grn" id="3sW-db-9Vz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UWz-ax-Smb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-232" y="794"/>
+            <point key="canvasLocation" x="-233.33333333333334" y="793.52678571428567"/>
         </scene>
         <!--To Do View Controller-->
         <scene sceneID="5IS-E3-qQH">
