@@ -2,7 +2,7 @@
 //  TimerViewController.swift
 //  BlossomApp
 //
-//  Created by Sophie on 2022-08-16.
+//  Created by Janice Sanchez on 8/17/22.
 //
 
 import UIKit
