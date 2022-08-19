@@ -8,97 +8,75 @@
 import UIKit
 
 class TImerViewController: UIViewController {
-    
-    var minutes = 25
-    var timer = Timer()
-    
-    
-    
-    
-    @IBOutlet weak var lblTime: UILabel!
-    @IBOutlet weak var slider: UISlider!
-    
-    
-    
+
+    @IBOutlet var label: UILabel?
+
+    var hours: Int = 0
+    var mins: Int = 0
+    var secs: Int = 0
+
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
 
-        // Do any additional setup after loading the view.
+    @IBAction func didTapAddButton() {
+        let vc = storyboard?.instantiateViewController(identifier: "date_picker") as! DateViewController
+        vc.title = "New Event"
+        vc.completionHandler = { [weak self] name, date in
+            DispatchQueue.main.async {
+                self?.didCreateEvent(name: name, targetDate: date)
+            }
+        }
+        navigationController?.pushViewController(vc, animated: true)
     }
-    
-    
-    
-    @IBAction func slider(_ sender: UISlider) {
-        minutes = Int(sender.value)
-        lblTime.text = String(minutes)
-    }
-    
-       
-    
 
-    @IBAction func buttonStart(_ sender: Any) {
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(TImerViewController.updateTimer), userInfo: nil, repeats: true)
-    }
-    
-    
-    
-    @IBAction func buttonStop(_ sender: Any) {
-        timer.invalidate()
-        minutes = 25
-        slider.setValue(25, animated: true)
-        lblTime.text = String(minutes)
-    }
-    
-    @objc func updateTimer () {
-        
-        minutes -= 1
-        lblTime.text = timeString(time: TimeInterval(minutes))
-        
-        slider.value = Float(minutes)
-        
-        if minutes == 0 {
-            timer.invalidate()
+    private func didCreateEvent(name: String, targetDate: Date) {
+        self.title = name
+        let difference = floor(targetDate.timeIntervalSince(Date()))
+        if difference > 0.0 {
+            let computedHours: Int = Int(difference) / 3600
+            let remainder: Int = Int(difference) - (computedHours * 3600)
+            let minutes: Int = remainder / 60
+            let seconds: Int = Int(difference) - (computedHours * 3600) - (minutes * 60)
+
+            print("\(computedHours) \(minutes) \(seconds)")
+            hours = computedHours
+            mins = minutes
+            secs = seconds
+
+            updateLabel()
+
+            startTimer()
+        }
+        else {
+            print("negative interval")
         }
     }
-    
-    func timeString(time:TimeInterval) -> String {
-        
-        let hours = Int(time) / 3600
-        let minutes = Int(time) / 60 
-        let seconds = Int(time) % 60
-        
-        return String(format: "%02i:%02i:%02i", hours,minutes,seconds)
-        
-    }
-    
-    func alert () {
-        let alertController = UIAlertController(title: "Time's up!", message: "please take a 5 minute break :)", preferredStyle: .alert)
-        let cancelAction = UIAlertAction(title: "cancel", style: .cancel) { (action) in
-            print("cancel")
-        }
-        alertController.addAction(cancelAction)
-        
-        let OKAction = UIAlertAction(title: "OK", style: .default) { (action) in
-            print("OK")
-        }
-        alertController.addAction(OKAction)
-        self.present(alertController, animated: true)
-        
+
+    private func startTimer() {
+        Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { _ in
+            if self.secs > 0 {
+                self.secs = self.secs - 1
+            }
+            else if self.mins > 0 && self.secs == 0 {
+                self.mins = self.mins - 1
+                self.secs = 59
+            }
+            else if self.hours > 0 && self.mins == 0 && self.secs == 0 {
+                self.hours = self.hours - 1
+                self.mins = 59
+                self.secs = 59
+            }
+
+            self.updateLabel()
+        })
     }
 
-    
-    
-    
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func updateLabel() {
+        label?.text = "\(hours):\(mins):\(secs)"
     }
-    */
 
 }
+
+
+
