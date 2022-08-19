@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -226,16 +226,32 @@
                                 <rect key="frame" x="-182" y="368" width="557" height="420"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Study_Timer" translatesAutoresizingMaskIntoConstraints="NO" id="ial-bc-qIp">
-                                <rect key="frame" x="0.0" y="56" width="414" height="375"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KUF-0f-OzE">
+                                <rect key="frame" x="20" y="256" width="374" height="45"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Blossom Study Timer">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="39" name="Baskerville"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="c9z-Gc-fri"/>
                         <color key="backgroundColor" red="0.82745098039215681" green="0.76078431372549016" blue="0.82745098039215681" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="c9z-Gc-fri" firstAttribute="trailing" secondItem="KUF-0f-OzE" secondAttribute="trailing" constant="20" id="Aml-4t-bWY"/>
+                            <constraint firstItem="KUF-0f-OzE" firstAttribute="top" secondItem="c9z-Gc-fri" secondAttribute="top" constant="200" id="WkA-5B-e59"/>
+                            <constraint firstItem="KUF-0f-OzE" firstAttribute="leading" secondItem="c9z-Gc-fri" secondAttribute="leading" constant="20" id="e9S-Yv-gCB"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="PNb-c8-8ou"/>
+                    <connections>
+                        <outlet property="label" destination="KUF-0f-OzE" id="EBD-Ke-Wb0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UWz-ax-Smb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -395,14 +411,13 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="VNx-Wp-IZs"/>
+        <segue reference="I8J-CF-723"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Clock" width="2048" height="2048"/>
         <image name="Flowers 2" width="2048" height="2048"/>
         <image name="Flowers2" width="2048" height="2048"/>
         <image name="Mood_Tracker" width="2048" height="2048"/>
-        <image name="Study_Timer" width="2048" height="2048"/>
         <image name="arrow.turn.up.left" catalog="system" width="128" height="99"/>
         <image name="goals" width="2048" height="2048"/>
         <image name="hello" width="2048" height="2048"/>
